@@ -1,0 +1,38 @@
+@import '../../node_modules/materialize-css/sass/materialize';
+
+.fixed-height {
+    height: 3rem;
+    border: 0.01rem solid;
+    @extend .red; 
+    @extend .accent-1;
+}
+@media #{$small-and-down} {
+
+    .fixed-height {
+        color: red;
+    }
+}
+@media #{$medium-and-up} {
+    // styles for medium screens and larger
+    .fixed-height {
+        color: black;
+    }
+}
+@media #{$medium-and-down} {
+    // styles for medium screens and down
+    .fixed-height {
+        color: cyan;
+    }
+}
+@media #{$large-and-up} {
+    // styles for large screens and up
+    .fixed-height {
+        color: blue;
+    }
+}
+@media #{$extra-large-and-up} {
+    // styles for extra large screens and up
+    .fixed-height {
+        color: green;
+    }
+}
